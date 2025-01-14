@@ -1,1 +1,22 @@
-<p>application-list works!</p>
+<div class="application-list">
+    <h1>Loan Applications</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Application ID</th>
+                <th>Applicant Name</th>
+                <th>Loan Amount</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Example row, you can loop through your data to generate rows dynamically -->
+            <tr *ngFor="let application of applications">
+                <td>{{ application.id }}</td>
+                <td>{{ application.name }}</td>
+                <td>{{ application.amount }}</td>
+                <td>{{ application.status }}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
